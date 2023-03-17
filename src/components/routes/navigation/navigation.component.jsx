@@ -5,7 +5,12 @@ import { ReactComponent as CrownLogo } from "../../../assets/crown.svg";
 import "./navigation.styles.scss";
 
 import { UserContext } from "../../../context/user.context";
-import { signOutUser } from "./../../../utils/firebase/firebase.utils";
+import { CartContext } from "../../../context/cart.context";
+
+import "./navigation.styles.scss";
+import { ReactComponent as CrownLogo } from "../../../assets/crown.svg";
+import CartIcon from "../../cart-icon/cart-icon.component";
+import CartDropdown from "../../cart-dropdown/cart-dropdown.component";
 
 const Navigation = () => {
   const { currentUser } = useContext(UserContext);
